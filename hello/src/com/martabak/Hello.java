@@ -16,9 +16,10 @@ public class Hello {
         StringBuffer mutable = new StringBuffer("Phiraka");
         mutable.replace(0, mutable.length(), "Phirako");
         Printer printer = new Printer();
+        Printer printer2 = new Printer();
         s1 = " Adalah Kunci";
-        System.out.println(printer.author);
-        System.out.println(printer.getWatt());
+        System.out.println(printer.hashCode());
+        System.out.println(printer2.hashCode());
 
 
 
