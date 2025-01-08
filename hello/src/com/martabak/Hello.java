@@ -18,8 +18,8 @@ public class Hello {
         Printer printer = new Printer();
         Printer printer2 = new Printer();
         s1 = " Adalah Kunci";
-        System.out.println(printer.hashCode());
-        System.out.println(printer2.hashCode());
+
+        Integer num1 = new Integer(20);
 
 
 
