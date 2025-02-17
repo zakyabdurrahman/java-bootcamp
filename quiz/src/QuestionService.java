@@ -24,7 +24,21 @@ public class QuestionService {
             String userInput = sc.nextLine();
             selections.add(userInput);
         }
+
+
+
     }
 
+
+    public void showScore() {
+        int score = 0;
+        for (int i = 0; i < this.selections.toArray().length; i++) {
+            String userSelection = this.selections.get(i);
+            if (userSelection.equalsIgnoreCase(this.questions.get(i).answer)) {
+                score += 10;
+            }
+        }
+        System.out.println("Your score is " + score);
+    }
 
 }

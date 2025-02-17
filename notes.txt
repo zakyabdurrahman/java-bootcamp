@@ -1,0 +1,1 @@
+- lambda in java: implement a SAM (single abstract method) interface
