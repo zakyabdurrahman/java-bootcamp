@@ -1,5 +1,7 @@
 public interface Warship {
     void fire();
+
+
 }
 
 class Submarine implements Warship {

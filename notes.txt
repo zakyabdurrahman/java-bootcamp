@@ -1,1 +1,3 @@
 - lambda in java: implement a SAM (single abstract method) interface
+- Enum is an object that contain only constants
+- can use bufferedreader to read stream

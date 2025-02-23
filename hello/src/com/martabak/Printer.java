@@ -6,6 +6,7 @@ public class Printer extends Electronic {
 
     static String author = "zaky";
 
+
     public void print(String s) {
         System.out.println(s);
     }
