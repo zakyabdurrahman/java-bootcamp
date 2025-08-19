@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 @Table(name = "cars")
 public class Car {
     @Id
+    //if auto increment, strategy should be identity
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "car_id")
     private int carId;
@@ -28,16 +29,18 @@ public class Car {
         return carId;
     }
 
-    public void setCarId(int carId) {
+    public Car setCarId(int carId) {
         this.carId = carId;
+        return this;
     }
 
     public String getCarName() {
         return carName;
     }
 
-    public void setCarName(String carName) {
+    public Car setCarName(String carName) {
         this.carName = carName;
+        return this;
     }
 
     public int getCarYear() {
