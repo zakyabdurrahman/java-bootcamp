@@ -14,6 +14,8 @@ public class Car {
     private int carYear;
     @Column(name = "price")
     private float carPrice;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Manufacturer manufacturer;
 
     public Car(String carName, int carYear, float carPrice) {
         this.carName = carName;

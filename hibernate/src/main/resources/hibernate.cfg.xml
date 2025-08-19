@@ -5,6 +5,7 @@
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">postgres</property>
         <property name="hibernate.show_sql">true</property>
+        <!-- this makes java auto update table based on ORM schema -->
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.format_sql">true</property>
     </session-factory>

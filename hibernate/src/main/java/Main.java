@@ -38,7 +38,9 @@ public class Main {
         //this build the configs
         final Configuration cfg = new Configuration();
         //add our classes here using chaining
-        cfg.addAnnotatedClass(Car.class);
+        cfg
+                .addAnnotatedClass(Car.class)
+                .addAnnotatedClass(Manufacturer.class);
 
         try {
             //build the session factory with the above config
@@ -49,7 +51,7 @@ public class Main {
             return sf.openSession();
 
         } catch (Exception e) {
-
+            System.out.println(e.getMessage());
             return null;
         }
     }
