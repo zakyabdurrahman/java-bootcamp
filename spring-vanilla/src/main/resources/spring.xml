@@ -1,0 +1,15 @@
+
+
+<!-- config xml format sourc ehere -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--in spring load bean manually. map the name (id) to class here -->
+    <bean id="manufacturer" class="org.example.Manufacturer">
+        <!-- to pass constructor argument when spring contrainer init an object make like this-->
+        <constructor-arg type="java.lang.String" value="Indonesia"/>
+    </bean>
+
+</beans>
