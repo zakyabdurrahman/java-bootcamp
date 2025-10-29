@@ -1,3 +1,10 @@
 - lambda in java: implement a SAM (single abstract method) interface
 - Enum is an object that contain only constants
 - can use bufferedreader to read stream
+- spring is basically a dependency management framework it controls when and how to create object instead of us
+	- Spring boot is a simpler/more abstracted version of spring so we can start faster
+	- (not too different from Hilt/dagger)
+- JPA Hibernate is ORM but unlike propel.. we need to map each class to table manually (along with annotations etc)
+	- and they are strict about persistence session. read or update happens on the cache. to upload it to db 
+	- need to commit
+
