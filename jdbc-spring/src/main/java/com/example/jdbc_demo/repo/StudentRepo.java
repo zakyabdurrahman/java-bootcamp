@@ -15,7 +15,7 @@ public class StudentRepo {
     }
 
     public void save(Student s) {
-        String sql = "INSERT INTO STUDENT (roll_number, name, score) values (?, ?, ?)";
+        String sql = "INSERT INTO STUDENTS (roll_number, name, score) values (?, ?, ?)";
 
         template.update(sql, s.getRollNumber(), s.getName(), s.getScore());
     }

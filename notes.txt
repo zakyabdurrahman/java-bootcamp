@@ -5,12 +5,11 @@
 	- Spring boot is a simpler/more abstracted version of spring so we can start faster
 	- (not too different from Hilt/dagger)automatically set/initialize the dependencies when spring create an
 	object
-	
 	- autowiring means injecting a dependency inside a bean.. if there are multiple can same class beans can 
 	use qualifier annotation
 - JPA Hibernate is ORM but unlike propel.. we need to map each class to table manually (along with annotations etc)
 	- and they are strict about persistence session. read or update happens on the cache. to upload it to db 
 	- need to commit
 - for JDBC in spring you can add the dependencies (JDBC and DB driver) in spring initializer)
-
+	in jdbc Spring we can use RowMapper to map a result set to our own objects/class (using jdbc template.query)
 
