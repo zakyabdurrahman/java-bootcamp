@@ -11,5 +11,6 @@
 - JPA Hibernate is ORM but unlike propel.. we need to map each class to table manually (along with annotations etc)
 	- and they are strict about persistence session. read or update happens on the cache. to upload it to db 
 	- need to commit
+- for JDBC in spring you can add the dependencies (JDBC and DB driver) in spring initializer)
 
 
