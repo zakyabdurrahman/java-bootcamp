@@ -12,4 +12,5 @@
 	- need to commit
 - for JDBC in spring you can add the dependencies (JDBC and DB driver) in spring initializer)
 	in jdbc Spring we can use RowMapper to map a result set to our own objects/class (using jdbc template.query)
+- pebble is the simplest (for me) templating engine (along with spring web)
 
