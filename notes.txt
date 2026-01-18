@@ -1,6 +1,7 @@
 - lambda in java: implement a SAM (single abstract method) interface
 - Enum is an object that contain only constants
 - can use bufferedreader to read stream
+- important annotation= @override and functional interface
 - spring is basically a dependency management framework it controls when and how to create object instead of us
 	- Spring boot is a simpler/more abstracted version of spring so we can start faster
 	- (not too different from Hilt/dagger)automatically set/initialize the dependencies when spring create an
@@ -13,5 +14,7 @@
 - for JDBC in spring you can add the dependencies (JDBC and DB driver) in spring initializer)
 	in jdbc Spring we can use RowMapper to map a result set to our own objects/class (using jdbc template.query)
 - pebble is the simplest (for me) templating engine (along with spring web). pebble is basically twig
+- model in spring web controller is basically session (not ORM) kinda weird but it is what it is
+
 
 
