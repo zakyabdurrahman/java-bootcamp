@@ -15,6 +15,7 @@
 	in jdbc Spring we can use RowMapper to map a result set to our own objects/class (using jdbc template.query)
 - pebble is the simplest (for me) templating engine (along with spring web). pebble is basically twig
 - model in spring web controller is basically session (not ORM) kinda weird but it is what it is
+- Java int, float etc is primitives (non nullable!) but Integer, Float isn't somehow
 
 
 
