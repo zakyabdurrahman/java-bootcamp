@@ -22,6 +22,6 @@
 - Java int, float etc is primitives (non nullable!) but Integer, Float isn't somehow
 - if I want to reduce boilerplates when writing class I can use Lombok (using annotation to autogenerate default methods, getter setter, etc even constructors!)
 - when adding annotation processors like Lombok need to add another beside dependency in the pom xml (maybe just mvnw clean install if some weird shit happens)
-
+- for how to define entity in JPA just read hibernate docs its the same. the differences is in repository handling
 
 
