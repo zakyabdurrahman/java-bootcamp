@@ -1,13 +1,19 @@
 package com.zaky.job_mvc.services;
 
+import com.zaky.job_mvc.mappers.JobMapper;
 import com.zaky.job_mvc.models.JobPost;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Service;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
 
 @Service
 @NoArgsConstructor
@@ -20,6 +26,8 @@ public class JobPostService {
     private NamedParameterJdbcTemplate namedJdbcTemplate;
 
 
+
+
     //how to query jdbc with named params
     public boolean addJob(JobPost jobPost) {
         MapSqlParameterSource params = new MapSqlParameterSource();
@@ -28,5 +36,11 @@ public class JobPostService {
         params.addValue("req_exp", jobPost.getReqExperience());
         this.namedJdbcTemplate.update("INSERT INTO job_post (post_profile, post_desc, req_experience)  VALUES(:post_profile, :post_desc, :req_exp)", params);
         return true;
+    }
+
+    public List<JobPost> getJobs() {
+
+        List<JobPost> result = this.jdbcTemplate.query("SELECT * FROM job_post ORDER BY id DESC;", new JobMapper());
+        return result;
     }
 }

@@ -10,6 +10,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Controller
 public class JobController {
 
@@ -33,6 +35,15 @@ public class JobController {
         model.addAttribute("data", jobPost);
         jobPostService.addJob(jobPost);
         return "success";
+    }
+
+    @GetMapping("/viewalljobs")
+    public String showJobs(Model model) {
+
+        List<JobPost> jobs = jobPostService.getJobs();
+
+        model.addAttribute("data", jobs);
+        return "viewalljobs";
     }
 
 
